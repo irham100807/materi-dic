@@ -1,0 +1,50 @@
+# halo di sini saya akan menulis materi tentang dictionary di python
+# dictionary adalah tipe data koleksi yang memiliki kata kunci dan sebuah value
+# membuat dictionary menggunakan kurung kurawal{}
+# =======================================================================================
+# pembuatan dictionary:
+
+
+data_mahasiswa = {  
+    "nama": "Budi",
+    "umur": 20,
+    "jurusan": "Teknik Informatika"}
+
+# =======================================================================================
+
+# mengakses nilai dari dalam dictionary kita hanya perlu memanggil kata kunci di dalam krung siku[]
+
+
+
+print(data_mahasiswa['nama'])
+print(data_mahasiswa['umur'])
+print(data_mahasiswa['jurusan'])
+
+# dengan hanya mengetik kata kunci kita bisa mengakses sebuah value
+# =======================================================================================
+# kita juga bisa menambahkan data baru ke dictionary dan mengubah data yang sudah ada dengan cara memanggil kata kunci lalu memberi nilai baru
+
+data_mahasiswa['alamat']='Jl. pajajaran'#menambahkan data baru
+data_mahasiswa['jurusan']='Teknik informatika'#mengganti data yang sudah ada
+
+# menghapus data yang ada di dalam dict
+
+del data_mahasiswa['nama']#menghapus data dengan del
+
+# selain menggunakan del kita juga bisa menggunakan method pop untuk menghapus data di dalam dict
+
+data_mahasiswa.pop('umur')# menghapus data dengan pop
+
+
+
+
+# =======================================================================================
+
+# melihat semua kata kunci dan value yang berada di dalam dict
+print(data_mahasiswa.keys(),'\n',data_mahasiswa.values(),'\n',data_mahasiswa.items())
+
+# keys() untuk melihat semua kata kunci yang ada di dalam dict
+# values() untuk melihat semua value yang ada di dalam dict
+# items() untuk melihat semua pasangan kata kunci dan value yang ada di dalam dict
+
+
